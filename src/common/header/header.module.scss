@@ -1,0 +1,210 @@
+@import "../../assets/styles/main.scss";
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .headerDiv {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            height: 60px;
+            width: 160px;
+            background-color: var(--bg-red);
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(218, 57, 43, 0.5) 0px 0px 10px;
+
+            span {
+                @include font26Bold;
+                letter-spacing: 1px;
+                color: var(--font-white);
+                font-family: var(--font-family-reklame);
+            }
+        }
+
+        nav {
+            display: flex;
+            box-shadow: rgba(218, 57, 43, 0.5) 0px 0px 10px;
+            border-radius: 0 0 10px 10px;
+
+            @include breakpoint("md-max") {
+                display: none;
+            }
+
+            .link {
+                position: relative;
+                padding: 0 40px;
+                background-color: var(--color-white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                @include breakpoint("lg-max") {
+                    padding: 0 26px;
+                }
+
+                &:first-child {
+                    border-radius: 0 0 0 10px;
+                }
+
+                &:last-child {
+                    border-radius: 0 0 10px 0;
+                }
+
+                span {
+                    color: var(--font-black);
+                    @include font16;
+                    font-family: var(--font-family-roboto);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .dropdown {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    width: 100%;
+                    z-index: 999;
+                    padding-top: 10px;
+                    transition: all 0.3s ease-in-out;
+
+                    .dropdownBox {
+                        overflow: hidden;
+                        border-radius: 10px;
+                        box-shadow: rgba(218, 57, 43, 0.5) 0px 0px 10px;
+
+                        .droplink {
+                            display: block;
+                            text-align: center;
+                            padding: 10px;
+                            background-color: var(--color-white);
+                            color: var(--font-black);
+
+                            &:hover {
+                                background-color: var(--bg-red);
+                                color: var(--font-white);
+                            }
+
+                            &.active {
+                                background-color: var(--bg-red);
+                                color: var(--font-white);
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--bg-red);
+
+                    span {
+                        color: var(--font-white);
+                    }
+                }
+
+                &.active {
+                    background-color: var(--bg-red);
+
+                    span {
+                        color: var(--font-white);
+                    }
+                }
+            }
+
+            .linkDiv {
+                &:hover {
+                    .dropdown {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .hamburgerMenu {
+            display: none;
+            background-color: var(--color-white);
+            box-shadow: rgba(218, 57, 43, 0.5) 0px 0px 10px;
+            border-radius: 0 0 10px 10px;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+
+            @include breakpoint("md-max") {
+                display: flex;
+            }
+
+            &:hover {
+                background-color: var(--bg-red);
+
+                .menuIcon {
+                    span {
+                        border-bottom: 3px solid var(--color-white);
+                    }
+                }
+            }
+
+            .menuIcon {
+                position: relative;
+                cursor: pointer;
+                width: 60px;
+                height: 60px;
+                background: transparent;
+                transition: all 0.4s ease;
+
+                span {
+                    position: absolute;
+                    border-bottom: 3px solid var(--color-black);
+                    border-radius: 4px;
+                    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    left: 25%;
+                    width: 50%;
+
+                    &:nth-child(1) {
+                        top: 20px;
+                    }
+
+                    &:nth-child(2) {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    &:nth-child(3) {
+                        bottom: 21px;
+                    }
+                }
+
+                &.active {
+                    transform: rotate(180deg);
+
+                    span {
+                        width: 50% !important;
+
+                        &:nth-child(1) {
+                            top: 50%;
+                            transform: translateY(-50%) rotate(45deg);
+                            transform-origin: center;
+                        }
+
+                        &:nth-child(2) {
+                            opacity: 0;
+                            transform: translateX(100%);
+                        }
+
+                        &:nth-child(3) {
+                            bottom: 50%;
+                            transform: translateY(50%) rotate(-45deg);
+                            transform-origin: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

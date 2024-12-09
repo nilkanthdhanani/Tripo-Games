@@ -1,0 +1,23 @@
+@import "mixins";
+@import "typography";
+@import "variables";
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @include breakpoint("md-max") {
+        padding: 0 20px;
+    }
+}
+
+.containerFooter {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @include breakpoint("md-max") {
+        padding: 0 20px;
+    }
+}
