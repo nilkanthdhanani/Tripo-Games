@@ -8,8 +8,8 @@ import Header from "@/common/header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "File Title",
-  description: "file discription",
+  title: "Tripo Games | Game Company",
+  description: "multiple games company",
 };
 
 export default function RootLayout({ children }) {
