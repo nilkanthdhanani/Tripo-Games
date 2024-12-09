@@ -1,3 +1,4 @@
+"use client"
 import HeroBanner from "@/pages/homePage/heroBanner";
 
 export default function HomePage() {

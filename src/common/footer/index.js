@@ -28,15 +28,15 @@ export default function Footer() {
             </div>
             <div className={styles.footerLinksDiv}>
               <h2>Navigatin</h2>
-              <Link href="/">Games</Link>
-              <Link href="/">Careers</Link>
-              <Link href="/">About</Link>
-              <Link href="/">Contact</Link>
-              <Link href="/">Assessibitilty</Link>
-              <Link href="/">Terms & Conditions</Link>
-              <Link href="/">Privacy Policy</Link>
-              <Link href="/">Shipping Policy</Link>
-              <Link href="/">Refund Policy</Link>
+              <Link href="/#games">Games</Link>
+              <Link href="/careers">Careers</Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/assessibility">Assessibility</Link>
+              <Link href="/terms">Terms & Conditions</Link>
+              <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/shipping">Shipping Policy</Link>
+              <Link href="/refund">Refund Policy</Link>
             </div>
             <div className={styles.footerLinksDiv}>
               <h2>Social</h2>

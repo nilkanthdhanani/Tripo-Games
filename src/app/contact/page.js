@@ -1,10 +1,10 @@
-import ContactUsPage from '@/pages/contactPage'
+import ContactPage from '@/pages/contactPage'
 import React from 'react'
 
-export default function ContactUs() {
+export default function Contact() {
     return (
         <>
-            <ContactUsPage />
+            <ContactPage />
         </>
     )
 }
