@@ -62,7 +62,7 @@ export default function About() {
                     <h2>Your Source for Mobile Entertainment</h2>
                     <p>Gaming at Your Fingertips - Anytime, Anywhere!</p>
                     <Link href="/about">
-                        <button type="button">Learn More</button>
+                        <button type="button">Explore Now</button>
                     </Link>
                     <div className={styles.aboutContentImg}>
                         <div className={styles.aboutImgBg}>
