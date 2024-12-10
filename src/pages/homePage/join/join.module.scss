@@ -9,6 +9,11 @@
     background-attachment: fixed;
     position: relative;
 
+    @include breakpoint("sm-max") {
+        padding: 50px 0;
+        min-height: 600px;
+    }
+
     .joinDivDoll {
         position: absolute;
         bottom: 0;
@@ -20,6 +25,11 @@
 
             img {
                 display: block;
+
+                @include breakpoint("sm-max") {
+                    max-width: 300px;
+                    height: auto;
+                }
             }
         }
     }

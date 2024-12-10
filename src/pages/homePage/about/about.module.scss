@@ -8,6 +8,15 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
 
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(4, 1fr);
+        }
+
         .aboutGridBox {
             height: 100%;
             border-radius: 20px;
@@ -20,6 +29,7 @@
                 width: 100%;
                 height: auto;
                 max-height: 370px;
+                object-fit: cover;
                 transition: all 0.6s ease-in-out;
             }
 
@@ -129,6 +139,10 @@
         p {
             @include commonPera;
             margin: 20px 0 30px 0;
+
+            @include breakpoint("sm-max") {
+                margin: 20px 0;
+            }
         }
 
         .aboutContentImg {
@@ -175,6 +189,21 @@
                 position: absolute;
                 bottom: -50px;
                 left: -70px;
+
+                @include breakpoint("lg-max")  {
+                    left: -30px;
+                }
+
+                @include breakpoint("sm-max")  {
+                    bottom: -100px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    img {
+                        max-width: 150px;
+                        height: auto;
+                    }
+                }
             }
         }
     }

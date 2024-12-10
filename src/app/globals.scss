@@ -20,6 +20,10 @@ h5,
 h6,
 p {
     margin: 0;
+
+    @media (max-width: 576px) {
+        word-break: break-word;
+    }
 }
 
 a {

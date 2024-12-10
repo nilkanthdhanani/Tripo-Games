@@ -1,13 +1,17 @@
 @import "../../../assets/styles/main.scss";
 
 .ourGame {
-    padding: 40px 0 100px 0;
+    padding: 60px 0 100px 0;
 
     .gameHead {
         margin: 0 auto 50px auto;
         max-width: 720px;
         text-align: center;
         color: var(--font-black);
+
+        @include breakpoint("lg-max") {
+            margin: auto;
+        }
 
         h2 {
             @include commonHead;
@@ -29,7 +33,11 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            
+
+            @include breakpoint("lg-max") {
+                position: relative;
+            }
+
             img {
                 width: 100%;
                 height: auto;
@@ -40,6 +48,10 @@
             position: absolute;
             bottom: 5%;
             right: 80px;
+
+            @include breakpoint("lg-max") {
+                display: none;
+            }
         }
 
         .gameGrid1 {
@@ -51,6 +63,13 @@
             align-items: start;
             align-content: space-between;
 
+            @include breakpoint("lg-max") {
+                min-height: auto;
+                grid-template-columns: repeat(1, auto);
+                gap: 30px;
+                justify-content: center;
+            }
+
             .gameGrid1Box {
                 max-width: 400px;
                 padding: 40px;
@@ -58,11 +77,20 @@
                 box-shadow: rgba(218, 57, 43, 0.3) 0px 2px 10px;
                 border-radius: 12px;
 
+                @include breakpoint("sm-max") {
+                    padding: 30px;
+                }
+
                 .gameProfile {
                     display: grid;
                     grid-template-columns: 100px 1fr;
                     align-items: center;
                     gap: 20px;
+
+                    @include breakpoint("sm-max") {
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                    }
 
                     img {
                         width: 100%;
@@ -70,6 +98,10 @@
                         border-radius: 30px;
                         border: 7px solid var(--color-white);
                         box-shadow: rgba(218, 57, 43, 0.2) 3px 3px 7px;
+
+                        @include breakpoint("sm-max") {
+                            max-width: 100px
+                        }
                     }
 
                     .gameName {
@@ -94,17 +126,20 @@
                     color: var(--font-black);
                     font-family: var(--font-family-roboto);
                     margin: 30px 0;
+
+                    @include breakpoint("sm-max") {
+                        margin: 20px 0;
+                    }
                 }
 
                 .gameLink {
                     display: flex;
-                    align-items: center;
                     gap: 10px;
 
                     img {
                         display: block;
                         width: 100%;
-                        height: auto;
+                        object-fit: contain;
                     }
                 }
             }
