@@ -1,0 +1,46 @@
+@import "../../../assets/styles/main.scss";
+
+.join {
+    min-height: 750px;
+    padding: 100px 0;
+    background-image: url("../../../assets/images/webp/redSkull.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    .joinDivDoll {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .dollImage {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                display: block;
+            }
+        }
+    }
+
+    .joinDiv {
+        max-width: 700px;
+        color: var(--font-white);
+
+        span {
+            display: block;
+            @include font22Bold;
+        }
+
+        h2 {
+            @include commonHead;
+            margin: 20px 0;
+        }
+
+        p {
+            @include commonPera;
+            margin: 20px 0 30px 0;
+        }
+    }
+}

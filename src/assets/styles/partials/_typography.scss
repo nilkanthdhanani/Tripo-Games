@@ -1,7 +1,26 @@
 
 @mixin font16 {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+@mixin commonPera {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: var(--font-family-roboto);
+}
+
+@mixin font20 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+@mixin font22 {
+    font-size: 22px;
+    line-height: 26px;
     font-weight: 400;
 }
 
@@ -21,6 +40,13 @@
     font-size: 26px;
     line-height: 32px;
     font-weight: 600;
+}
+
+@mixin commonHead {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: var(--font-family-suezone);
 }
 
 @mixin font80 {

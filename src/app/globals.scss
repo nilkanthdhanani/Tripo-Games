@@ -4,6 +4,10 @@ body {
     background-color: var(--bg-main);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }

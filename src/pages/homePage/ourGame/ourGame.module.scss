@@ -1,0 +1,113 @@
+@import "../../../assets/styles/main.scss";
+
+.ourGame {
+    padding: 30px 0 100px 0;
+
+    .gameHead {
+        margin: 60px auto 50px auto;
+        max-width: 720px;
+        text-align: center;
+        color: var(--font-black);
+
+        h2 {
+            @include commonHead;
+            margin-bottom: 20px;
+        }
+
+        p {
+            @include commonPera;
+        }
+    }
+
+    .gameGrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+        .gameGridImg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .gameGridDoll {
+            position: absolute;
+            bottom: 5%;
+            right: 80px;
+        }
+
+        .gameGrid1 {
+            min-height: 1180px;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-between;
+            align-items: start;
+            align-content: space-between;
+
+            .gameGrid1Box {
+                max-width: 400px;
+                padding: 40px;
+                background-color: var(--color-white);
+                box-shadow: rgba(218, 57, 43, 0.3) 0px 2px 10px;
+                border-radius: 12px;
+
+                .gameProfile {
+                    display: grid;
+                    grid-template-columns: 100px 1fr;
+                    align-items: center;
+                    gap: 20px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 30px;
+                        border: 7px solid var(--color-white);
+                        box-shadow: rgba(218, 57, 43, 0.2) 3px 3px 7px;
+                    }
+
+                    .gameName {
+                        h3 {
+                            @include font22Bold;
+                            color: var(--font-black);
+                            font-family: var(--font-family-roboto);
+                            margin-bottom: 5px;
+                        }
+
+                        span {
+                            display: block;
+                            @include font16;
+                            color: var(--font-black);
+                            font-family: var(--font-family-roboto);
+                        }
+                    }
+                }
+
+                p {
+                    @include font16;
+                    color: var(--font-black);
+                    font-family: var(--font-family-roboto);
+                    margin: 30px 0;
+                }
+
+                .gameLink {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

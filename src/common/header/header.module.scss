@@ -19,11 +19,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: rgba(218, 57, 43, 0.5) 0px 0px 10px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
 
             span {
                 @include font26Bold;
-                letter-spacing: 1px;
+                letter-spacing: 2px;
                 color: var(--font-white);
                 font-family: var(--font-family-reklame);
             }
@@ -31,7 +31,7 @@
 
         nav {
             display: flex;
-            box-shadow: rgba(218, 57, 43, 0.5) 0px 0px 10px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
             border-radius: 0 0 10px 10px;
 
             @include breakpoint("md-max") {

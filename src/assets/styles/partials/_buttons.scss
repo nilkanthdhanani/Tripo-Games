@@ -1,3 +1,45 @@
 @import "mixins";
 @import "typography";
 @import "variables";
+
+.aboutContent {
+    button {
+        padding: 10px 16px;
+        border: 2px solid var(--bg-red);
+        border-radius: 7px;
+        background-color: var(--bg-red);
+        @include font16;
+        font-weight: 600;
+        font-family: var(--font-family-roboto);
+        color: var(--font-white);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: var(--bg-red);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}
+
+.joinDiv {
+    button {
+        padding: 10px 16px;
+        border: 2px solid var(--color-white);
+        border-radius: 7px;
+        background-color: var(--color-white);
+        @include font16;
+        font-weight: 600;
+        font-family: var(--font-family-roboto);
+        color: var(--bg-red);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: var(--color-white);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}
