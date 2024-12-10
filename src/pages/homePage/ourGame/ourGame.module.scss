@@ -67,7 +67,7 @@
                 min-height: auto;
                 grid-template-columns: repeat(1, auto);
                 gap: 30px;
-                justify-content: center;
+                justify-content: normal;
             }
 
             .gameGrid1Box {
@@ -76,6 +76,12 @@
                 background-color: var(--color-white);
                 box-shadow: rgba(218, 57, 43, 0.3) 0px 2px 10px;
                 border-radius: 12px;
+
+                &:nth-child(2) {
+                    @include breakpoint("lg-max") {
+                        justify-self: end;
+                    }
+                }
 
                 @include breakpoint("sm-max") {
                     padding: 30px;
@@ -100,7 +106,7 @@
                         box-shadow: rgba(218, 57, 43, 0.2) 3px 3px 7px;
 
                         @include breakpoint("sm-max") {
-                            max-width: 100px
+                            max-width: 100px;
                         }
                     }
 

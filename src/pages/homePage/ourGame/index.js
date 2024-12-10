@@ -58,11 +58,7 @@ export default function OurGames() {
             <div className={styles.container}>
                 <div className={styles.gameHead}>
                     <h2>Our Games</h2>
-                    <p>
-                        Explore an exciting collection of mobile games designed for endless fun and
-                        entertainment. From action-packed adventures to brain-teasing puzzles, our games deliver
-                        immersive experiences for players of all ages.
-                    </p>
+                    <p>Explore an exciting collection of mobile games designed for endless fun and entertainment. From action-packed adventures to brain-teasing puzzles, our games deliver immersive experiences for players of all ages.</p>
                 </div>
                 <div className={styles.gameGrid} ref={gameGridRef}>
                     <div className={styles.gameGridImg} style={{ opacity }}>
