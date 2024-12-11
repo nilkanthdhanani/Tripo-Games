@@ -62,7 +62,7 @@ export default function Header() {
                     <Link href="/robotrix" className={`${styles.droplink} ${pathname === '/robotrix' ? styles.active : ''}`}>
                       Robotrix
                     </Link>
-                    <Link href="/treasure-box" className={`${styles.droplink} ${pathname === '/treasure-box' ? styles.active : ''}`}>
+                    <Link href="/treasure" className={`${styles.droplink} ${pathname === '/treasure-box' ? styles.active : ''}`}>
                       Treasure Box
                     </Link>
                   </div>

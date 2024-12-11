@@ -1,0 +1,65 @@
+@import "../../assets/styles/main.scss";
+
+.gameDes {
+    padding: 200px 0;
+    position: relative;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0;
+    }
+
+    .gameDesBg1, .gameDesBg2, .gameDesBg3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(218, 57, 43, 0.6);
+            z-index: 1;
+        }
+    }
+
+    .gameDesBg1 {
+        background-image: url("../../assets/images/webp/kiponBg2.webp");
+    }
+
+    .gameDesBg2 {
+        background-image: url("../../assets/images/webp/robotrixBg2.webp");
+    }
+
+    .gameDesBg3 {
+        background-image: url("../../assets/images/webp/treasureBg2.webp");
+    }
+
+    .gameDesBox {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: var(--color-white);
+        
+        h2 {
+            max-width: 800px;
+            @include commonHead;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 570px;
+            @include commonPera;
+        }
+    }
+}
