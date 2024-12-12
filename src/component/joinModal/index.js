@@ -98,6 +98,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <input
                                 type="text"
                                 name="firstName"
+                                id="firstName"
                                 value={formValues.firstName}
                                 onChange={handleInputChange}
                             />
@@ -110,6 +111,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <input
                                 type="text"
                                 name="lastName"
+                                id="lastName"
                                 value={formValues.lastName}
                                 onChange={handleInputChange}
                             />
@@ -122,6 +124,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <input
                                 type="email"
                                 name="email"
+                                id="email"
                                 value={formValues.email}
                                 onChange={handleInputChange}
                             />
@@ -134,6 +137,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <input
                                 type="number"
                                 name="phone"
+                                id="phone"
                                 value={formValues.phone}
                                 onChange={handleInputChange}
                             />
@@ -168,6 +172,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <input
                                 type="url"
                                 name="cvUrl"
+                                id="cvUrl"
                                 value={formValues.cvUrl}
                                 onChange={handleInputChange}
                             />
@@ -180,6 +185,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <input
                                 type="url"
                                 name="linkedInUrl"
+                                id="linkedInUrl"
                                 value={formValues.linkedInUrl}
                                 onChange={handleInputChange}
                             />
@@ -189,6 +195,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <textarea
                                 rows={3}
                                 name="comments"
+                                id="comments"
                                 value={formValues.comments}
                                 onChange={handleInputChange}
                             ></textarea>
