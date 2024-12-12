@@ -142,7 +142,7 @@ export default function JoinModal({ isOpen, onClose }) {
                             <label htmlFor="position">Position</label>
                             <div className={styles.customSelect}>
                                 <div className={styles.select} onClick={toggleDropdown}>
-                                    {selectedPosition || "Select Position"}
+                                    {selectedPosition || " "}
                                 </div>
                                 <div className={`${styles.selectArrow} ${isDropdownOpen ? styles.open : ""}`}>
                                     <DropIcon />
