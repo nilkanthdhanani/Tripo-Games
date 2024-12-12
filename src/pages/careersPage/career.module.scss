@@ -1,0 +1,26 @@
+@import "../../assets/styles/main.scss";
+
+.careerHead {
+    padding: 160px 0 100px 0;
+    max-width: 560px;
+    color: var(--font-black);
+
+    @include breakpoint("sm-max") {
+        padding: 140px 0 60px 0;
+    }
+
+    span {
+        display: block;
+        @include font22Bold;
+        font-family: var(--font-family-roboto);
+    }
+
+    h1 {
+        @include commonHead;
+        margin: 20px 0;
+    }
+
+    p {
+        @include commonPera;
+    }
+}

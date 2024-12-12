@@ -12,11 +12,11 @@ export default function GameBanner({ icon, name, category, description, heading,
           <div className={styles.gameProfile}>
             <Image src={icon} alt={`${name} Icon`} />
             <div className={styles.gameName}>
-              <h3>{name}</h3>
+              <h2>{name}</h2>
               <span>{category}</span>
             </div>
           </div>
-          <h2>{heading}</h2>
+          <h1>{heading}</h1>
           <p>{description}</p>
           <div className={styles.gameLink}>
             <Link href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">

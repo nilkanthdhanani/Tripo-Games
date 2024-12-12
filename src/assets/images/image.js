@@ -23,7 +23,12 @@ import treasureIcon from "./webp/treasureIcon.webp"
 import treasureBg2 from "./webp/treasureBg2.webp"
 import treasurePoster1 from "./webp/treasurePoster1.webp"
 import treasurePoster2 from "./webp/treasurePoster2.webp"
+import jobBg from "./webp/jobBg.webp"
+import jobIcon1 from "./webp/jobIcon1.webp"
+import jobIcon2 from "./webp/jobIcon2.webp"
+import jobIcon3 from "./webp/jobIcon3.webp"
+import jobIcon4 from "./webp/jobIcon4.webp"
 
 export {
-    google, apple, homeBg, kiponImg, robotrixImg, treasureImg, aboutDoll, aboutBg, ourGameBg, ourDoll, kiponIcon, robotrixIcon, treasureIcon, joinDoll, kiponBg, kiponBg2, kiponPoster1, kiponPoster2, robotrixBg2, robotrixPoster1, robotrixPoster2, treasureBg2, treasurePoster1, treasurePoster2
+    google, apple, homeBg, kiponImg, robotrixImg, treasureImg, aboutDoll, aboutBg, ourGameBg, ourDoll, kiponIcon, robotrixIcon, treasureIcon, joinDoll, kiponBg, kiponBg2, kiponPoster1, kiponPoster2, robotrixBg2, robotrixPoster1, robotrixPoster2, treasureBg2, treasurePoster1, treasurePoster2, jobBg, jobIcon1, jobIcon2, jobIcon3, jobIcon4
 }

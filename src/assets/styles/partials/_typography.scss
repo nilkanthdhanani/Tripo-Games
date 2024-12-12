@@ -1,3 +1,9 @@
+@mixin font14 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
 @mixin font16 {
     font-size: 16px;
     line-height: 25px;
@@ -38,6 +44,12 @@
 @mixin font26Bold {
     font-size: 26px;
     line-height: 32px;
+    font-weight: 600;
+}
+
+@mixin font34 {
+    font-size: 34px;
+    line-height: 41px;
     font-weight: 600;
 }
 

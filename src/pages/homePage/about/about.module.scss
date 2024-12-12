@@ -129,6 +129,7 @@
         span {
             display: block;
             @include font22Bold;
+            font-family: var(--font-family-roboto);
         }
 
         h2 {

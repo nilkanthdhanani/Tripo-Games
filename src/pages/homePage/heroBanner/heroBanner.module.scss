@@ -42,7 +42,7 @@
 
             h1 {
                 @include font80;
-                color: var(--font-blue);
+                color: var(--font-black);
 
                 @include breakpoint("sm-max")  {
                     font-size: 50px;
