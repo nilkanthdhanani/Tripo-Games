@@ -76,7 +76,8 @@
     }
 }
 
-.sendCVText, .carOpModal {
+.sendCVText,
+.carOpModal {
     button {
         padding: 10px 16px;
         border: none;
@@ -92,6 +93,26 @@
         &:hover {
             background-color: transparent;
             background-color: var(--color-white);
+        }
+    }
+}
+
+.officeDivExplore {
+    button {
+        padding: 10px 16px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--bg-blue);
+        @include font16;
+        font-weight: 600;
+        font-family: var(--font-family-roboto);
+        color: var(--font-white);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            background-color: var(--bg-red);
         }
     }
 }

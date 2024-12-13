@@ -1,0 +1,78 @@
+@import "../../../assets/styles/main.scss";
+
+.aboutContent {
+    .aboutConHead {
+        padding: 160px 0 100px 0;
+
+        @include breakpoint("sm-max") {
+            padding: 120px 0 60px 0;
+        }
+
+        span {
+            display: block;
+            @include font22Bold;
+            font-family: var(--font-family-roboto);
+        }
+
+        h1 {
+            max-width: 740px;
+            @include commonHead;
+            color: var(--font-black);
+            margin-top: 30px;
+        }
+    }
+
+    .aboutConGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        .aboutConBg {
+            position: relative;
+            overflow: hidden;
+
+            @include breakpoint("lg-max") {
+                min-height: 500px;
+            }
+
+            .aboutBgImg {
+                position: absolute;
+                width: calc(100% + 120px);
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-image: url("../../../assets/images/webp/aboutBg1.webp");
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+
+        .aboutConText {
+            padding: 100px;
+            background-color: var(--bg-red);
+            color: var(--font-white);
+
+            @include breakpoint("lg-max") {
+                padding: 50px 30px;
+            }
+
+            p {
+                max-width: 500px;
+                @include commonPera;
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
