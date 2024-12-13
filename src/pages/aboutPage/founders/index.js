@@ -35,7 +35,7 @@ export default function Founders() {
                         {fonders.map((data, index) => (
                             <div className={styles.fonderGridBox} key={index}>
                                 <div className={styles.fonderBoxImg}>
-                                    <Image src={data.image} alt={data.title} />
+                                    <Image src={data.image} alt={data.name} />
                                 </div>
                                 <h3>{data.name}</h3>
                                 <span>{data.post}</span>
