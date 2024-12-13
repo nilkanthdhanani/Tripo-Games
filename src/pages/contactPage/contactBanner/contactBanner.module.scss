@@ -1,8 +1,252 @@
 @import "../../../assets/styles/main.scss";
 
 .contactBanner {
-    height: calc(100vh - 200px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 160px 0 100px 0;
+    background-image: url("../../../assets/images/webp/jobBg.webp");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+
+    @include breakpoint("sm-max") {
+        padding: 120px 0 60px 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(39, 36, 67, 0.6);
+    }
+
+    .contactBox {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        gap: 20px;
+
+        @include breakpoint("lg-max") {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .contactBox1 {
+            max-width: 500px;
+            padding: 24px;
+            background-color: var(--color-white);
+            border-radius: 20px;
+
+            h1 {
+                @include font34;
+                font-family: var(--font-family-roboto);
+                color: var(--font-black);
+            }
+
+            p {
+                @include font16;
+                color: var(--font-black);
+                font-family: var(--font-family-roboto);
+                margin: 20px 0 30px 0;
+            }
+
+            form {
+                .inputGrid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 35px 25px;
+
+                    @include breakpoint("md-max") {
+                        grid-template-columns: 1fr;
+                        gap: 0;
+                    }
+                }
+
+                .inputBox {
+                    margin-bottom: 35px;
+
+                    @include breakpoint("sm-max") {
+                        margin-bottom: 20px;
+                    }
+
+                    label {
+                        display: block;
+                        @include font16;
+                        color: var(--font-black);
+                        font-family: var(--font-family-roboto);
+                        margin-bottom: 5px;
+                    }
+
+                    input,
+                    textarea {
+                        padding: 8px 12px;
+                        width: 100%;
+                        border: 1px solid var(--border-color);
+                        border-radius: 10px;
+                        @include font16;
+                        font-family: var(--font-family-roboto);
+                        color: var(--font-black);
+                    }
+
+                    textarea {
+                        resize: none;
+
+                        &::-webkit-scrollbar {
+                            width: 0;
+                            height: 0;
+                        }
+                    }
+
+                    span {
+                        display: flex;
+                        gap: 5px;
+                        @include font14;
+                        color: var(--font-red);
+                        font-family: var(--font-family-roboto);
+                        margin-top: 5px;
+
+                        svg {
+                            min-width: 20px;
+                        }
+                    }
+                }
+
+                .submitBtn {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .contactBox2 {
+            width: 100%;
+            max-width: 400px;
+            padding: 24px;
+            background-color: var(--bg-red);
+            border-radius: 20px;
+
+            h2 {
+                @include font22Bold;
+                font-family: var(--font-family-roboto);
+                color: var(--color-white);
+                margin-bottom: 30px;
+            }
+
+            form {
+                .inputBox {
+                    margin-bottom: 35px;
+
+                    @include breakpoint("sm-max") {
+                        margin-bottom: 20px;
+                    }
+
+                    label {
+                        display: block;
+                        @include font16;
+                        color: var(--font-white);
+                        font-family: var(--font-family-roboto);
+                        margin-bottom: 5px;
+                    }
+
+                    input {
+                        padding: 8px 12px;
+                        width: 100%;
+                        border: 1px solid var(--color-white);
+                        background-color: transparent !important;
+                        border-radius: 10px;
+                        @include font16;
+                        font-family: var(--font-family-roboto);
+                        color: var(--font-white);
+
+                        &:focus {
+                            outline: 2px solid var(--color-white);
+                        }
+                    }
+
+                    input:-webkit-autofill {
+                        background-color: #da392b !important;
+                        color: white !important;
+                        -webkit-text-fill-color: white !important;
+                        box-shadow: 0 0 0px 1000px #da392b inset !important;
+                    }
+
+                    span {
+                        display: flex;
+                        gap: 7px;
+                        @include font14;
+                        color: var(--font-black);
+                        font-family: var(--font-family-roboto);
+                        margin-top: 5px;
+
+                        svg {
+                            min-width: 20px;
+                            fill: var(--font-black);
+                        }
+                    }
+                }
+
+                .checkboxDiv {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+
+                    label {
+                        margin-bottom: 0;
+                        cursor: pointer;
+                    }
+
+                    input {
+                        position: absolute;
+                        margin: 0;
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        opacity: 0;
+                    }
+
+                    input:checked + div svg path {
+                        stroke-dashoffset: 0;
+                    }
+
+                    input + div {
+                        display: block;
+                        border: 1px solid var(--color-white);
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 0.2s ease;
+                    }
+
+                    input + div:active {
+                        transform: scale(1.05);
+                    }
+
+                    input + div svg {
+                        pointer-events: none;
+                        padding: 10%;
+                    }
+
+                    input + div svg path {
+                        fill: none;
+                        stroke: var(--color-white);
+                        stroke-width: 6px;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-dasharray: 100;
+                        stroke-dashoffset: 101;
+                        transition: all 250ms cubic-bezier(1, 0, 0.37, 0.91);
+                    }
+                }
+
+                .submitBtn2 {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
 }

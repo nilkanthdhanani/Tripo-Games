@@ -1,3 +1,4 @@
+"use client"
 import ContactBanner from "@/pages/contactPage/contactBanner";
 
 export default function ContactPage() {

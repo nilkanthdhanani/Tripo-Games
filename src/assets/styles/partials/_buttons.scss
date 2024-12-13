@@ -24,7 +24,8 @@
     }
 }
 
-.submitBtn {
+.submitBtn,
+.submitBtn2 {
     button {
         width: 100%;
 
@@ -77,7 +78,8 @@
 }
 
 .sendCVText,
-.carOpModal {
+.carOpModal,
+.submitBtn2 {
     button {
         padding: 10px 16px;
         border: none;

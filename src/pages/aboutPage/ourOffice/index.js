@@ -11,14 +11,14 @@ export default function OurOffice() {
                     <div className={styles.officeDivText}>
                         <span>Our Office</span>
                         <h2>Our Studio in San Francisco</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum fuga commodi ex eligendi inventore, modi repellendus rerum. Deserunt nisi natus aliquam at illo asperiores quidem soluta ducimus ipsam quia!</p>
+                        <p>Our San Francisco studio is the heart of our creativity and innovation. Nestled in the vibrant tech hub, it fosters collaboration and inspiration, driving our mission to deliver cutting-edge mobile entertainment experiences to players worldwide.</p>
                     </div>
                     <div className={styles.officeDivExplore}>
                         <div className={styles.officeImage}>
                             <Image src={studioIcon} alt="studioIcon" />
                         </div>
                         <h3>We'd Love to Work With You</h3>
-                        <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                        <p>We'd love to collaborate with passionate talent who share our vision for creating unforgettable gaming experiences and pushing boundaries.</p>
                         <Link href={"/careers"}>
                             <button>Explore Opportunities</button>
                         </Link>
