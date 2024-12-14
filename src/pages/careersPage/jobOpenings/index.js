@@ -47,10 +47,10 @@ export default function JobOpenings() {
     return (
         <>
             <div className={styles.jobOpenings}>
-                <h2>Job Openings</h2>
+                <h2 data-aos="zoom-in">Job Openings</h2>
                 <div className={styles.jobGrid}>
                     {jobOpenings.map((data, index) => (
-                        <div className={styles.jobBox} key={index}>
+                        <div className={styles.jobBox} key={index} data-aos="fade-up" data-aos-delay={index * 200}>
                             <div>
                                 <div className={styles.jobBoxImg}>
                                     <Image src={data.image} alt={data.title} />
@@ -67,7 +67,7 @@ export default function JobOpenings() {
                 </div>
             </div>
             <div className={styles.sendCV}>
-                <div className={styles.sendCVText}>
+                <div className={styles.sendCVText} data-aos="zoom-in">
                     <span>Didn’t Find the Position You’re Looking For?</span>
                     <h2>Send Us Your CV</h2>
                     <button type="button" onClick={handleModalToggle}>Apply Now</button>

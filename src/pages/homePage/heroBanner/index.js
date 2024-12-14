@@ -34,7 +34,7 @@ export default function HeroBanner() {
       </div>
       <div className={styles.heroBannerDiv}>
         <div className={styles.container}>
-          <div className={styles.heroBannerContent}>
+          <div className={styles.heroBannerContent} data-aos="zoom-in">
             <h1>Made to Be Played</h1>
             <p>The Very Best in Mobile Gaming</p>
             <div className={styles.storeLink}>

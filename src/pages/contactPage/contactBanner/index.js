@@ -65,7 +65,7 @@ export default function ContactBanner() {
     <div className={styles.contactBanner}>
       <div className={styles.container}>
         <div className={styles.contactBox}>
-          <div className={styles.contactBox1}>
+          <div className={styles.contactBox1} data-aos="fade-right">
             <h1>Get in Touch</h1>
             <p>Reach out to us for inquiries, collaborations, or support. We're here to connect and bring your ideas to life!</p>
             <form onSubmit={handleSubmit1}>
@@ -119,7 +119,7 @@ export default function ContactBanner() {
               </div>
             </form>
           </div>
-          <div className={styles.contactBox2}>
+          <div className={styles.contactBox2} data-aos="fade-left">
             <h2>Subscribe to Our Newsletter</h2>
             <form onSubmit={handleSubmit2}>
               <div className={styles.inputBox}>

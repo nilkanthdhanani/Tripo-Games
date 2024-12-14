@@ -8,7 +8,7 @@ export default function GameBanner({ icon, name, category, description, heading,
     <section className={styles.gameBanner}>
       <div className={`${styles[gameBgClass]}`}></div>
       <div className={styles.container}>
-        <div className={styles.gameBox}>
+        <div className={styles.gameBox} data-aos="fade-up">
           <div className={styles.gameProfile}>
             <Image src={icon} alt={`${name} Icon`} />
             <div className={styles.gameName}>

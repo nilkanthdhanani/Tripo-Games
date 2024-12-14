@@ -2,12 +2,14 @@
 
 .reviews {
     padding: 100px 0;
+    overflow: hidden;
 
     @include breakpoint("sm-max") {
         padding: 60px 0;
     }
 
     h2 {
+        display: inline-block;
         @include commonHead;
         color: var(--font-black);
     }

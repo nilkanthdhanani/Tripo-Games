@@ -8,12 +8,12 @@ export default function OurOffice() {
         <section className={styles.ourOffice}>
             <div className={styles.container}>
                 <div className={styles.ourOfficeDiv}>
-                    <div className={styles.officeDivText}>
+                    <div className={styles.officeDivText} data-aos="zoom-in">
                         <span>Our Office</span>
                         <h2>Our Studio in San Francisco</h2>
                         <p>Our San Francisco studio is the heart of our creativity and innovation. Nestled in the vibrant tech hub, it fosters collaboration and inspiration, driving our mission to deliver cutting-edge mobile entertainment experiences to players worldwide.</p>
                     </div>
-                    <div className={styles.officeDivExplore}>
+                    <div className={styles.officeDivExplore} data-aos="fade-left">
                         <div className={styles.officeImage}>
                             <Image src={studioIcon} alt="studioIcon" />
                         </div>

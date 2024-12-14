@@ -30,10 +30,10 @@ export default function Founders() {
         <section className={styles.founders}>
             <div className={styles.container}>
                 <div className={styles.foundersBox}>
-                    <h2>Meet the Founders</h2>
+                    <h2 data-aos="zoom-in">Meet the Founders</h2>
                     <div className={styles.fonderGrid}>
                         {fonders.map((data, index) => (
-                            <div className={styles.fonderGridBox} key={index}>
+                            <div className={styles.fonderGridBox} key={index} data-aos="fade-up" data-aos-delay={index * 200}>
                                 <div className={styles.fonderBoxImg}>
                                     <Image src={data.image} alt={data.name} />
                                 </div>

@@ -40,7 +40,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={styles.header}>
+      <header className={styles.header} data-aos="fade-down">
         <div className={styles.container}>
           <div className={styles.headerDiv}>
             <Link href="/">

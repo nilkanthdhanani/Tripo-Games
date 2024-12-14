@@ -8,13 +8,13 @@ export default function Join() {
         <section className={styles.join}>
             <div className={styles.joinDivDoll}>
                 <div className={styles.container}>
-                    <div className={styles.dollImage}>
+                    <div className={styles.dollImage} data-aos="fade-up">
                         <Image src={joinDoll} alt="joinDoll" />
                     </div>
                 </div>
             </div>
             <div className={styles.container}>
-                <div className={styles.joinDiv}>
+                <div className={styles.joinDiv} data-aos="zoom-in">
                     <span>Join Our Team</span>
                     <h2>It takes the world's best talent to change the game.</h2>
                     <Link href="/careers">

@@ -6,18 +6,21 @@ import Link from 'next/link';
 
 const gameList = [
     {
+        aos: "fade-right",
         icon: kiponIcon,
         title: 'Kipon',
         subtitle: 'Casual - Free',
         description: "Dive into a relaxing world with Kipon, a casual game perfect for quick play sessions. Enjoy endless fun, simple controls, and engaging levels to keep your stress at bay.",
     },
     {
+        aos: "fade-left",
         icon: robotrixIcon,
         title: 'Robotrix',
         subtitle: 'RPG - Free',
         description: "Embark on an epic adventure in Robotrix, an RPG filled with futuristic challenges. Customize robots, battle powerful enemies, and explore a world where strategy and skill decide your fate.",
     },
     {
+        aos: "fade-right",
         icon: treasureIcon,
         title: 'Treasure Box',
         subtitle: 'Adventure - Free',
@@ -56,7 +59,7 @@ export default function OurGames() {
     return (
         <section className={styles.ourGame} id='games'>
             <div className={styles.container}>
-                <div className={styles.gameHead}>
+                <div className={styles.gameHead} data-aos="zoom-in">
                     <h2>Our Games</h2>
                     <p>Explore an exciting collection of mobile games designed for endless fun and entertainment. From action-packed adventures to brain-teasing puzzles, our games deliver immersive experiences for players of all ages.</p>
                 </div>
@@ -64,12 +67,12 @@ export default function OurGames() {
                     <div className={styles.gameGridImg} style={{ opacity }}>
                         <Image src={ourGameBg} alt="ourGameBg" />
                     </div>
-                    <div className={styles.gameGridDoll}>
+                    <div className={styles.gameGridDoll} data-aos="fade-left">
                         <Image src={ourDoll} alt="ourDoll" />
                     </div>
                     <div className={styles.gameGrid1}>
                         {gameList.map((data, index) => (
-                            <div className={styles.gameGrid1Box} key={index}>
+                            <div className={styles.gameGrid1Box} key={index} data-aos={data.aos}>
                                 <div className={styles.gameProfile}>
                                     <Image src={data.icon} alt={data.title} />
                                     <div className={styles.gameName}>

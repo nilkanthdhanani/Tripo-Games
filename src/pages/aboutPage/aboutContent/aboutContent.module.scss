@@ -2,6 +2,7 @@
 
 .aboutContent {
     .aboutConHead {
+        max-width: 740px;
         padding: 160px 0 100px 0;
 
         @include breakpoint("sm-max") {
@@ -15,7 +16,6 @@
         }
 
         h1 {
-            max-width: 740px;
             @include commonHead;
             color: var(--font-black);
             margin-top: 30px;

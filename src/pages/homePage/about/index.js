@@ -31,7 +31,7 @@ export default function About() {
             <div className={styles.container}>
                 <div className={styles.aboutGrid}>
                     {aboutData.map((data, index) => (
-                        <div className={styles.aboutGridMain} key={index}>
+                        <div className={styles.aboutGridMain} key={index} data-aos="fade-up" data-aos-delay={index * 200}>
                             <Link href={data.link}>
                                 <div className={styles.aboutGridBox}>
                                     <Image src={data.img} alt={data.title} />
@@ -45,7 +45,7 @@ export default function About() {
                             </Link>
                         </div>
                     ))}
-                    <div className={styles.aboutGridMain}>
+                    <div className={styles.aboutGridMain} data-aos="fade-up" data-aos-delay={600}>
                         <Link href={"/#games"}>
                             <div className={styles.aboutGameBox}>
                                 <div className={styles.aboutGameBoxBg}></div>
@@ -57,18 +57,18 @@ export default function About() {
                         </Link>
                     </div>
                 </div>
-                <div className={styles.aboutContent}>
+                <div className={styles.aboutContent} data-aos="zoom-in">
                     <span>About Tripo</span>
                     <h2>Your Source for Mobile Entertainment</h2>
                     <p>Gaming at Your Fingertips - Anytime, Anywhere!</p>
                     <Link href="/about">
                         <button type="button">Explore Now</button>
                     </Link>
-                    <div className={styles.aboutContentImg}>
+                    <div className={styles.aboutContentImg} data-aos="fade-up">
                         <div className={styles.aboutImgBg}>
                             <Image src={aboutBg} alt="aboutBg" />
                         </div>
-                        <div className={styles.aboutImgDoll}>
+                        <div className={styles.aboutImgDoll} data-aos="zoom-in">
                             <Image src={aboutDoll} alt="aboutDoll" />
                         </div>
                     </div>
