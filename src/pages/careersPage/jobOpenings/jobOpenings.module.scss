@@ -38,6 +38,10 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: start;
+
+            @include breakpoint("sm-max") {
+                align-items: center;
+            }
             
             .jobBoxImg {
                 max-width: 240px;

@@ -15,7 +15,7 @@ export default function CareerOption({ title, whatPera1, whatPera2, whatPera3, w
             <section className={styles.careerOption}>
                 <div className={styles.careerOptionBg}></div>
                 <div className={styles.container}>
-                    <div className={styles.carOpHead}>
+                    <div className={styles.carOpHead} data-aos="zoom-in">
                         <span>Careers</span>
                         <h1>{title}</h1>
                         <p>Location: San Francisco</p>
