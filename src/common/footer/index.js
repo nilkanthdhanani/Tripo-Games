@@ -32,7 +32,6 @@ export default function Footer() {
               <Link href="/careers">Careers</Link>
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
-              <Link href="/assessibility">Assessibility</Link>
               <Link href="/terms">Terms & Conditions</Link>
               <Link href="/privacy">Privacy Policy</Link>
               <Link href="/shipping">Shipping Policy</Link>

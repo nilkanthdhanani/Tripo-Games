@@ -1,0 +1,87 @@
+@import "../..//assets/styles/main.scss";
+
+.shippingHead {
+    padding: 160px 0 100px 0;
+    background-color: var(--bg-blue);
+
+    @include breakpoint("sm-max") {
+        padding: 120px 0 60px 0;
+    }
+
+    .shippingHeadData {
+        max-width: 700px;
+
+        h1 {
+            @include commonHead;
+            color: var(--font-white);
+            margin-bottom: 20px;
+        }
+
+        p {
+            @include commonPera;
+            color: var(--font-white);
+        }
+    }
+}
+
+.shippingContent {
+    padding: 40px 0;
+
+    h2 {
+        @include font34;
+        color: var(--font-red);
+        margin-bottom: 20px;
+
+        @include breakpoint("sm-max") {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 15px;
+        }
+    }
+
+    p {
+        @include commonPera;
+        color: var(--font-black);
+        margin-bottom: 20px;
+
+        @include breakpoint("sm-max") {
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+
+        span {
+            display: block;
+
+            a {
+                color: var(--font-black);
+            }
+        }
+    }
+
+    ul {
+        margin: 0 0 20px 0;
+
+        @include breakpoint("sm-max") {
+            padding-left: 30px;
+        }
+
+        li {
+            @include commonPera;
+            color: var(--font-black);
+
+            a {
+                color: var(--font-black);
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+            @include breakpoint("sm-max") {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+    }
+}

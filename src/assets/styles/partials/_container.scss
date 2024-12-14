@@ -3,7 +3,7 @@
 @import "variables";
 
 .container {
-    max-width: 1260px;
+    max-width: calc(1200px + 60px);
     margin: 0 auto;
     padding: 0 30px;
 
@@ -13,7 +13,7 @@
 }
 
 .container2 {
-    max-width: 880px;
+    max-width: calc(820px + 60px);
     margin: 0 auto;
     padding: 0 30px;
 
@@ -23,7 +23,7 @@
 }
 
 .containerFooter {
-    max-width: 980px;
+    max-width: calc(920px + 60px);
     margin: 0 auto;
     padding: 0 30px;
 
